@@ -16,7 +16,7 @@ class TodoUpdateView(UpdateView):
     fields = ['title', 'deadline']
     success_url = reverse_lazy('todo_list')
 
- class TodoDeleteView(DeleteView):
+class TodoDeleteView(DeleteView):
     model = Todo
     success_url = reverse_lazy('todo_list')
 
